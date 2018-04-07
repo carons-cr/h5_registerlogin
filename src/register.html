@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册界面</title>
+    <link href="register.css" rel="stylesheet">
+</head>
+<body>
+<div class="background">
+    <form action="" method="post">
+        <fieldset>
+            <legend>帐号信息</legend>
+            <div class="left">
+                <label for="accountId">帐号：</label>
+            </div>
+            <div class="right">
+                <input type="text" name="accountId" id="accountId" required="required" autofocus="autofocus" placeholder="请输入帐号...">
+                <div class="notice">请输入8位长度字符，可以输入数字、字母，不能输入符号!</div>
+            </div>
+            <div class="left">
+                <label for="password">密码：</label>
+            </div>
+            <div class="right">
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="left">
+                <label for="passwordConfirmation">再次输入密码：</label>
+            </div>
+            <div class="right">
+                <input type="password" name="passwordConfirmation" id="passwordConfirmation">
+                <div class="notice">请记住您的密码，并且保持两次密码输入一致</div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>个人信息</legend>
+            <div class="left">
+                <label for="name">姓名：</label>
+            </div>
+            <div class="right">
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="left">
+                <label for="age">年龄：</label>
+            </div>
+            <div class="right">
+                <input type="number" name="age" id="age" min="0" max="99" required="required">
+            </div>
+            <div class="left">
+                <label for="birthDate">出生日期：</label>
+            </div>
+            <div class="right">
+                <input type="date" name="birthDate" id="birthDate">
+            </div>
+            <div class="left">
+                <label>性别：</label>
+            </div>
+            <div class="right">
+                <label>男：<input type="radio" name="sex" id="boy" value="boy"></label>
+                <label>女：<input type="radio" name="sex" id="girl" value="girl"></label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>联系方式</legend>
+            <div class="left">
+                <label for="telephone">手机号码：</label>
+            </div>
+            <div class="right">
+                <input type="tel" name="telephone" id="telephone" required="required" placeholder="请输入手机号码..." pattern="^[0-9]{11}$">
+            </div>
+            <div class="left">
+                <label for="email">电子邮箱：</label>
+            </div>
+            <div class="right">
+                <input type="email" name="email" id="email">
+            </div>
+        </fieldset>
+        <input type="submit" name="submit" id="submit">
+    </form>
+</div>
+</body>
+<script type="text/javascript" src="register.js"></script>
+</html>

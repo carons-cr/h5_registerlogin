@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+    <style>
+        #colgroup1 {
+            background-color: red ;
+        }
+
+        #col2 {
+            background-color: green;
+        }
+
+        #col11 {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<table border="1">
+    <col id="col11"></col>
+    <colgroup id="colgroup1" span="">
+        <col id="col1" span="2">
+        <col id="col2" span="1">//没有特定设置样式，则继承colgroup1的样式，前两列为红色
+        <col id="col3" span="1">//样式为col2的绿色，默认为一列
+        <col id="col4" span="1">
+    </colgroup>
+    <thead>
+    <tr>
+        <th id="name1">姓名</th>
+        <th id="age1">年龄</th>
+        <th id="name2">姓名</th>
+        <th id="age2">年龄</th>
+        <th id="name3">姓名</th>
+        <th id="age3">年龄</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td headers="name1 one">张三</td>
+        <td headers="age1 one">25</td>
+        <td headers="name2 one">张三</td>
+        <td headers="age2 one">25</td>
+        <td headers="name3 one">张三</td>
+        <td headers="age3 one">25</td>
+    </tr>
+    <tr>
+        <td headers="name1 two">李四</td>
+        <td headers="age1 two">23</td>
+        <td headers="name2 two">张三</td>
+        <td headers="age2 two">25</td>
+        <td headers="name3 two">张三</td>
+        <td headers="age3 two">25</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td>平均</td>
+        <td>24</td>
+        <td>平均</td>
+        <td>24</td>
+        <td>平均</td>
+        <td>24</td>
+    </tr>
+    </tfoot>
+</table>
+<form method="post" action="http://codefordream.com/form" oninput="result.value = weight.value *  price.value">
+    <fieldset disabled="disabled" style="width: 300px;">
+        <legend>test</legend>
+        <p>
+            <label for="name">name: <input id="name" name="name" /></label>
+        </p>
+        <p>
+            <label for="age">age: <input id="age" name="name" /></label>
+        </p>
+    </fieldset>
+    <fieldset  style="width: 300px;">
+        <p>
+            <label for="grade">grade: <input id="grade" name="name" /></label>
+        </p>
+    </fieldset>
+    <textarea wrap="hard">sadgerdgerwuibfbtunetynmihhigyerityirhgiuergiuerhguiergbvniufbfbgiu</textarea>
+    <input type="number"  id="weight" />
+    x <input type="number"  id="price" />
+    =
+    <output for="weight price" name="result" />
+
+    <button>submit</button>
+</form>
+
+</body>
+
+</html>
+

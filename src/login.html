@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+    <link href="login.css" rel="stylesheet">
+</head>
+<body>
+<div class="background">
+    <form action="" method="post" id="form" autocomplete="on"></form>
+    <div class="left">
+        <label for="accountId">帐号：</label>
+    </div>
+    <div class="right">
+        <input type="text" name="accountId" id="accountId" for="form" autofocus="true" placeholder="请输入帐号" required="required">
+    </div>
+    <div class="left">
+        <label for="password">密码：</label>
+    </div>
+    <div class="right">
+        <input type="password" name="password" id="password" for="form">
+    </div>
+    <div class="button">
+        <input type="submit" name="login" id="login" value="登录" for="form">
+        <input type="submit" name="register" id="register" value="注册" for="form">
+    </div>
+</div>
+</body>
+</html>
